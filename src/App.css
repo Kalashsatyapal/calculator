@@ -1,0 +1,73 @@
+/* Calculator container with a sleek background and subtle shadow */
+.calculator {
+  width: 400px;
+  margin: 50px auto;
+  padding: 30px;
+  background: linear-gradient(135deg, #ff7e5f, #feb47b); /* Gradient background */
+  border-radius: 15px;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Display area with a clean, modern look */
+.display {
+  width: 100%;
+  height: 100px;
+  margin-bottom: 20px;
+  padding: 20px;
+  font-size: 2em; /* Larger font size for easy reading */
+  text-align: right;
+  background-color: #fff;
+  color: #333; /* Darker text for better contrast */
+  border-radius: 10px;
+  border: 2px solid #ddd;
+  box-sizing: border-box;
+  box-shadow: inset 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+/* Button grid layout with even gaps */
+.buttons {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 12px;
+}
+
+/* Button styles */
+button {
+  padding: 18px; /* Slightly larger padding for better touch targets */
+  font-size: 1.2em; /* Slightly larger font size */
+  border-radius: 8px;
+  border: none;
+  background: #f0f0f0;
+  color: #333;
+  cursor: pointer;
+  transition: all 0.3s ease; /* Smooth transition */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Soft button shadow */
+}
+
+/* Hover effect for buttons with color change */
+button:hover {
+  background: #ffd400; /* Gold color for hover */
+  box-shadow: 0 6px 8px rgba(0, 0, 0, 0.2); /* Darker shadow on hover */
+}
+
+/* Active button effect for a pressed look */
+button:active {
+  background: #feb47b;
+  box-shadow: inset 0 4px 8px rgba(0, 0, 0, 0.1); /* Inner shadow on active */
+}
+
+/* Focused button effect for accessibility */
+button:focus {
+  outline: none;
+  box-shadow: 0 0 8px rgba(0, 153, 255, 0.6); /* Blue outline on focus */
+}
+
+/* Special styles for the clear and equal buttons */
+button:contains('C'), button:contains('=') {
+  background: #ff7e5f; /* Different color for clear and equals buttons */
+  color: white;
+}
+
+button:contains('C'):hover, button:contains('='):hover {
+  background: #feb47b; /* Hover effect for C and = buttons */
+}
